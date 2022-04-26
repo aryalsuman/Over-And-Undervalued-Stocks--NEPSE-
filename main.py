@@ -28,3 +28,4 @@ file_name="CalculationOfGrahamNumber.xlsx"
 tabledata.to_excel(file_name,index=False)
 tabledata.to_csv("Detail_List_In_Csv.csv",index=False)
 format_excel_file(file_name)
+# print(tabledata)
