@@ -3,7 +3,7 @@ import pandas as pd
 from companylists import latest_company_list
 from getdetail import get_complete_detail
 from excelcalculation import format_excel_file
-import os
+import os,sys
 from tqdm import tqdm
 needed_items_from_website=["Sector","Shares Outstanding","Market price","52 Weeks High - Low","120 Day Average","EPS","P/E Ratio","Book Value","PBV","Market Capitalization"]
 all_data=[]
@@ -31,5 +31,9 @@ file_name="CalculationOfGrahamNumber.xlsx"
 tabledata.to_excel(file_name,index=False)
 tabledata.to_csv("Detail_List_In_Csv.csv",index=False)
 format_excel_file(file_name)
-print("Opening excel file.")
-os.startfile(os.getcwd()+"\\CalculationOfGrahamNumber.xlsx")
+if (sys.platform=="win32"):
+    print("Opening excel file.")
+    os.startfile(os.getcwd()+"\\CalculationOfGrahamNumber.xlsx")
+else:
+    print(f"View {file_name} from {os.getcwd()}")
+
