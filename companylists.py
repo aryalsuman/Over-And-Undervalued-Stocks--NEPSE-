@@ -2,7 +2,7 @@
 import requests,bs4
 def latest_company_list(websitelink):
     r=requests.get(websitelink)
-    soup=bs4.BeautifulSoup(r.content)
+    soup=bs4.BeautifulSoup(r.content,'lxml')
     tabledata=soup.find_all('tr')#getting all tr tag
     symbols=[]
     # print(tabledata[1])

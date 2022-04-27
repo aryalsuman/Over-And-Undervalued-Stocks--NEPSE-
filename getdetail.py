@@ -27,5 +27,5 @@ def get_complete_detail(each_company,needed_items_from_website):
             if j not in finaldata:  
                 finaldata.append(j)
     finaldata.insert(0,each_company)
-    print(finaldata)
+    # print(finaldata)
     return finaldata
