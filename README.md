@@ -5,7 +5,7 @@ Scrap the latest data using different websites and creates a formatted excel fil
 
 ```bash
    $ git clone https://github.com/aryalsuman/Over-And-Undervalued-Stocks--NEPSE-.git
-   $ cd Over-And-Undervalued-Stocks-Of-Domestic-Market-Nepse-Using-Graham-Number
+   $ cd Over-And-Undervalued-Stocks-Of-Domestic-Market--Nepse-
    $ pip install -r requirement.txt
    $ python3 main.py
 ```
